@@ -9,3 +9,4 @@ print(fruit[-1:len(fruit) - 3])
 print(fruit[:])
 print(fruit[-3:-1])
 print(fruit[-1:-3])
+
