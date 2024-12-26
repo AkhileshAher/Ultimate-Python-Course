@@ -11,3 +11,4 @@ print(name[4])
 # print(name[5])
 for character in apple:
     print(character)
+
