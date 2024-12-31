@@ -1,0 +1,30 @@
+'''Write a Library class with no_of_books and books as two instance variables. Write a program to create a library from this Library class and show how you can print all books, add a book and get the number of books using different methods. Show that your program doesnt persist the books after the program is stopped!'''
+
+class Library:
+    def __init__(self):
+        self.noBooks= 0 
+        self.books = []
+
+    def addbooks(self,book):
+        self.books.append(book)
+        self.noBooks = len(self.books)
+
+    def showBooks(self):
+        print(f"The Library has {self.noBooks} books")
+
+    def displayBooks(self):
+        print("Shelf Books :")
+        for i in range(len(self.books)):
+            print(f"{i+1} : {self.books[i]}")
+
+l1=Library()
+l1.addbooks("Harry Potter")
+l1.addbooks("Queen Elizabeth")
+l1.addbooks("Akhilesh Aher")
+l1.addbooks("James Bond")
+l1.addbooks("Harleen Shamsi")
+l1.addbooks("The Raw")
+l1.addbooks("Seven Wonders")
+
+l1.showBooks()
+l1.displayBooks()
