@@ -1,8 +1,10 @@
 from pypdf import PdfWriter
+import os
 
 merger = PdfWriter()
+files = [file for file in os.listdir() if file.endswith(".pdf")]
 
-for pdf in ["OOPs Concept/ClutteredFolder/file1.pdf", "OOPs Concept/ClutteredFolder/file2.pdf", "OOPs Concept/ClutteredFolder/file3.pdf"]:
+for pdf in files:
     merger.append(pdf)
 
 merger.write("merged-pdf.pdf")
